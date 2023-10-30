@@ -1,0 +1,25 @@
+{
+	"rust-analyzer.inlayHints.closingBraceHints.enable": false,
+	"rust-analyzer.inlayHints.parameterHints.enable": false,
+	"workspace.ignoredFolders": [
+  		"$HOME",
+  		"$HOME/.cargo/**",
+  		"$HOME/.rustup/**"
+	],
+	"languageserver": {
+  		"ccls": {
+   			"command": "ccls",
+ 	   		"filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+    			"rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+    			"initializationOptions": {
+        			"cache": {
+          				"directory": "/tmp/ccls"
+        			},
+					"client": {
+						"snippetSupport": true
+					}
+      			}
+				
+  		}
+	}
+}
